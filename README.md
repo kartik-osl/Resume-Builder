@@ -14,4 +14,4 @@ Functionality
     - 
   )
 
-  To run the website, download the files and in vs-code, install live-server extension and run live server through project_o.html.
+  To run the website, download the files and in vs-code, install live-server extension and run live server through index.html.
