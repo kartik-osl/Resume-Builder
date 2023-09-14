@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project_o.css">
+    <title>Resume Builder</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Resume Builder</h1>
+    <hr>
+    <div class="LR">
+        <div class="form-container">
+            <h2>Personal Information</h2>
+            <hr>
+            <form id="resumeForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="tel" id="phone" placeholder="Phone" required>
+                <input type="text" id="address" placeholder="Address" required>
+
+                <div class="row m-0">
+                    <h2 class="edu-bg col-8 p-0">Educational Background</h2>
+                    <button class="btn btn-primary fw-bold col-4" type="button" id="addEducation">Add Education</button>
+                </div>
+                <div id="educationContainer">
+                    <!-- Educational Background fields will be added dynamically using JavaScript -->
+                </div>
+
+                <div class="row m-0">
+                    <h2 class="exp-bg col-8 p-0">Work Experience</h2>
+                    <button class="btn btn-primary fw-bold col-4" type="button" id="addExperience">Add Experience</button>
+                </div>
+                <div id="experienceContainer">
+                    <!-- Work Experience fields will be added dynamically using JavaScript -->
+                </div>
+
+                <div class="row m-0">
+                    <h2 class="skills-bg col-7 p-0">Skills</h2>
+                    <button class="btn btn-primary fw-bold col-4" type="button" id="addSkill">Add Skill</button>
+                </div>
+                <div id="skillsContainer">
+                    <!-- Skills fields will be added dynamically using JavaScript -->
+                </div>
+
+                <br>
+                <button class="btn btn-outline-primary fw-bold col-12" type="button" id="generateResume">Generate Resume</button>
+            </form>
+        </div>
+
+        <!-- Problem -->
+        <button id="editResume">Edit</button>
+        <div id="resumeOutput" class="hidden">
+            <!-- Generated resume will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="./project_o_v2.js"></script>
+</body>
+
+</html>
